@@ -1,0 +1,34 @@
+
+<div class="row">
+  <h1>Do-It-Man</h1>
+</div>
+<div class="container">
+  <div class="list">
+    <ul>
+      <% @lists.each do |list| %>
+      <li><%= check_box_tag(:checked) %><span><%= list.title %></span><%= link_to list, remote: true, method: :delete do %><i class="fa fa-trash-o"></i></li>
+      <% end %>
+      <% end %>
+    </ul>
+
+    <div id="list_input">
+      <%= form_for(@list, remote: true) do |f| %>
+      <%= f.text_field :title, placeholder: 'Enter a task', autofocus: true %>
+      <%= f.submit :+ %>
+      <% end %>
+    </div>
+  </div>
+  <div class="palette">
+    <ul>
+      <li class="blue"></li>
+      <li class="light-blue"></li>
+      <li class="pink"></li>
+      <li class="red"></li>
+      <li class="yellow"></li>
+      <li class="brown"></li>
+      <li class="purple"></li>
+      <li class="teal"></li>
+      <li class="blue-grey"></li>
+    </ul>
+  </div>
+</div>

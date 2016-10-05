@@ -1,0 +1,50 @@
+.palette {
+
+  ul {
+    position: absolute;
+    top: 100px;
+    left: 350px;
+    width: 70px;
+   padding: 20px;
+  }
+  ul li {
+    margin: auto;
+    width: 20px;
+    height: 20px;
+    transition: all 0.3s ease-in-out;
+    border-radius: 50%;
+
+  }
+  ul li:hover {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.light-blue {
+ background-color: #2196F3;
+}
+.blue {
+  background-color: #0D47A1;
+}
+.yellow {
+  background-color: #FFFF00;
+}
+.red {
+  background-color: #F44336;
+}
+.pink {
+  background-color: #E91E63;
+}
+.blue-grey {
+  background-color: #263238;
+}
+.brown {
+  background-color: #3E2723;
+}
+.teal {
+  background-color: #004D40;
+}
+.purple {
+  background-color: #4A148C;
+}

@@ -1,0 +1,20 @@
+<% if flash[:success] %>
+<div class="success">
+  <%= flash[:success] %>
+</div>
+<% else %>
+<div class="danger">
+  <%= flash[:danger] %>
+</div>
+<% end %>
+
+<% if @list.errors.any? %>
+<div class="danger">
+  <%= @list.errors.count %>errors
+</div>
+<ul>
+  <% @list.errors.full_messages.each do |msg| %>
+  <li><%= msg %></li>
+  <% end %>
+</ul>
+<% end %>
